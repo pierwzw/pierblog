@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>言曌博客 | 程序人生，永不止步</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#fff">
+    <meta name="keywords" content="刘言曌,言曌博客,刘䶮曌博客,Java博客,JavaEE,JavaWeb,后端开发,Java成长之路,Java,个人博客,Java个人博客"/>
+    <meta name="description" content="言曌博客是专注JavaEE,JavaWeb的个人技术博客，同时是个人程序人生的点滴记录和时光储备。"/>
+    <link rel="shortcut icon" type="images/x-icon" href="/upload/2018/10/logo20181111185335360.png">
+    <!--[if lt IE 9]>
+    <script src="http://blog-cdn.codergroup.cn/begin/assets/js/html5.js"></script>
+    <script src="http://blog-cdn.codergroup.cn/begin/assets/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <meta name='robots' content='noindex,follow'/>
+    <link rel='stylesheet' id='begin-style-css' href='http://blog-cdn.codergroup.cn/begin/assets/css/style.css'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='fonts-css' href='http://blog-cdn.codergroup.cn/begin/assets/css/fonts.css'
+          type='text/css' media='all'/>
+    <link rel="alternate" type="application/rss+xml" title="atom 1.0" href="/feed.xml">
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+            background-color: #eee;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3798e8;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+<div id="page" class="hfeed site">
+    <header id="masthead" class="site-header">
+        <nav id="top-header">
+            <div class="top-nav">
+                <div id="user-profile">
+                    <div class="user-login">欢迎光临！</div>
+                    <div class="nav-set">
+                        <div class="nav-login">
+                            <a href="/admin/login"
+                               title="Login"><i class="fa fa-user"></i>登录
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="menu-topmenu-container">
+                    <ul id="menu-topmenu" class="top-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="/p/shang">
+                                <i class="fa-heart fa"></i>
+                                <span class="font-text">赞赏记录</span>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="/p/favorite">
+                                <i class="fa-paperclip fa"></i>
+                                <span class="font-text">收藏夹</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--  #menu-box -->
+        <div id="menu-box">
+            <div id="top-menu">
+			<span class="nav-search">
+				<i class="fa fa-search"></i>
+			</span>
+                <span class="mobile-login"><a href="/admin/login" title="Login"><i class="fa fa-user"></i></a></span>
+                <div class="logo-site">
+                    <h1 class="site-title">
+                        <a href="http://blog.liuyanzhao.com" title="" rel="home">言曌博客</a>
+                    </h1>
+                    <p class="site-description"> 程序人生，永不止步</p>
+                </div><!-- .logo-site -->
+
+                <div id="site-nav-wrap">
+                    <div id="sidr-close">
+                        <a href="#sidr-close" class="toggle-sidr-close">×</a>
+                    </div>
+                    <nav id="site-nav" class="main-nav">
+                        <a href="#sidr-main" id="navigation-toggle" class="bars">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div class="menu-mainmenu-container">
+                            <ul id="menu-mainmenu" class="down-menu nav-menu">
+                                <li id="menu-item-138"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/category/javadev">
+                                        <i class="fa-coffee fa"></i>
+                                        <span class="font-text">Java 开发</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-109"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/java-basic">
+                                                <span class="font-text">Java 基础</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-155"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/java-web">
+                                                <span class="font-text">JavaWeb</span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-230"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/templates">
+                                                        <span class="font-text">模板引擎</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-193"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/core-java">
+                                                <span class="font-text">java 进阶</span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-229"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/java-code">
+                                                        <span class="font-text">Java 源码</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-242"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/multi-thread">
+                                                        <span class="font-text">多线程并发编程</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-213"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/interview">
+                                                <span class="font-text">备战面试</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-243"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/util">
+                                                <span class="font-text">工具类</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-245"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/jiagou">
+                                                <span class="font-text">技术架构</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-275"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/category/back-frameworks">
+                                        <i class="fa-building fa"></i>
+                                        <span class="font-text">框架与实战</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-24"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/trouble-solve">
+                                                <span class="font-text">异常与报错</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-271"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/micro-service">
+                                                <span class="font-text">微服务和分布式</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-65"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/ide">
+                                                <span class="font-text">开发利器</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-179"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/spring">
+                                                <span class="font-text">Spring 家族</span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-250"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/springboot">
+                                                        <span class="font-text">SpringBoot教程</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-251"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/springcloud">
+                                                        <span class="font-text">SpringCloud</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-228"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/orm">
+                                                <span class="font-text">ORM 框架</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-232"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/search-engine">
+                                                <span class="font-text">搜索引擎框架</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-233"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/cache">
+                                                <span class="font-text">缓存技术</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-244"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/dependency">
+                                                <span class="font-text">第三方依赖</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-198"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/category/computer-science">
+                                        <i class="fa-cubes fa"></i>
+                                        <span class="font-text">计算机科学</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-200"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/data-structure-and-algorithm">
+                                                <span class="font-text">数据结构和算法</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-201"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/operating-system">
+                                                <span class="font-text">操作系统</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-202"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/database-computer-science">
+                                                <span class="font-text">数据库</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-203"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/computer-network">
+                                                <span class="font-text">计算机网络</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-246"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/compile">
+                                                <span class="font-text">编译原理</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-236"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/category/other-tech">
+                                        <i class="fa-th-large fa"></i>
+                                        <span class="font-text">其他技术</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-4"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/js">
+                                                <span class="font-text">JavaScript/jQuery</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-3"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/html-css">
+                                                <span class="font-text">HTML/CSS</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-63"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/php-notes">
+                                                <span class="font-text">PHP</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-85"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/web-build">
+                                                <span class="font-text">网站建设</span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-16"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/webserver">
+                                                        <span class="font-text">Apache/Nginx</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-15"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/os">
+                                                        <span class="font-text">Linux</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-10"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/wordpress">
+                                                        <span class="font-text">WordPress</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-86"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/server-host">
+                                                        <span class="font-text">服务器与主机</span>
+                                                    </a>
+                                                </li>
+                                                <li id="menu-item-89"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="/category/web-optimization">
+                                                        <span class="font-text">网站优化</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-237"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/c">
+                                                <span class="font-text">C</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-241"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/front-end-frame">
+                                                <span class="font-text">前端组件</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-276"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/category/knowledge">
+                                        <i class="fa-bookmark fa"></i>
+                                        <span class="font-text">资源与知识</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-13"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/vedio">
+                                                <span class="font-text">视频收藏</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-23"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/specials">
+                                                <span class="font-text">文章杂烩</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-59"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/resource-share">
+                                                <span class="font-text">资源分享</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-110"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/surf-skills">
+                                                <span class="font-text">上网百科</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-182"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/category/game">
+                                                <span class="font-text">娱乐游戏</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-277"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/p/message">
+                                        <i class="fa-comments fa"></i>
+                                        <span class="font-text">留言板</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><!-- #site-nav -->
+                </div><!-- #site-nav-wrap -->
+                <div class="clear"></div>
+            </div><!-- #top-menu -->
+        </div>
+        <!-- #menu-box -->
+
+    </header><!-- #masthead -->
+
+    <div id="search-main">
+        <div class="searchbar">
+            <form method="get" id="searchform" action="/search">
+            <span>
+                <input type="text" value="" name="keyword" id="keyword" placeholder="输入搜索内容" required/>
+                <button type="submit" id="searchsubmit">搜索</button>
+            </span>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <nav class="breadcrumb">
+        <div class="bull"><i class="fa fa-volume-up"></i></div>
+        <div id="scrolldiv">
+            <div class="scrolltext">
+                <ul style="margin-top: 0px;">
+                    <li class="scrolltext-title">
+                        <a href="/notice/9372" rel="bookmark" target="_blank">本站长期提供网站服务，Java问题解决，Java新手带学</a>
+                    </li>
+                    <li class="scrolltext-title">
+                        <a href="/notice/9407" rel="bookmark" target="_blank">后台在重构中，准备使用Vue Element UI来做</a>
+                    </li>
+                    <li class="scrolltext-title">
+                        <a href="/notice/9408" rel="bookmark" target="_blank">当前系统出售中，欢迎来询价</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+                <div class="orderby">
+                    <ul>
+                        <li class="order">
+                            <a href="javascript:void(0)" title="文章排序">
+                                <i class="fa fa-sort-amount-asc"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="order-box">
+                        <li>
+                            <a href="?order=postId" rel="nofollow" title="按日期排序">
+                                <i class="fa fa-calendar-minus-o"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?order=commentSize" rel="nofollow" title="按评论排序">
+                                <i class="fa fa-comment-o"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?order=postViews" rel="nofollow" title="按浏览排序">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?order=postLikes" rel="nofollow" title="按点赞排序">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 幻灯片 -->
+                <div id="slideshow" class="wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="rslides callbacks callbacks1" id="slider" style="max-width: 2000px;">
+                        <li id="callback_s0" class="callbacks1_on"
+                            style="float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 800ms ease-in-out 0s;">
+                            <a href="http://blog.liuyanzhao.com/article/9352" target="_blank" rel="external nofollow">
+                                <img src="http://blog-cdn.codergroup.cn/uploads/2019/3/15c00051acf2130f6dba16e82b5cc4d2"
+                                     alt="基于SpringBoot+Shiro+Redis+ElasticSearch实现的博客系统，欢迎注册使用">
+                            </a>
+                            <p class="slider-caption">
+                                基于SpringBoot+Shiro+Redis+ElasticSearch实现的博客系统，欢迎注册使用
+                            </p>
+                        </li>
+                        <li id="callback_s1" class="callbacks1_on"
+                            style="float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 800ms ease-in-out 0s;">
+                            <a href="/8402.html" target="_blank" rel="external nofollow">
+                                <img src="http://blog-cdn.codergroup.cn/uploads/2019/3/2de4c1a9c0dc4575c05f0cfae5367928"
+                                     alt="CoderGroup —— 基于 SpringBoot 实现的开发者社区，欢迎入驻">
+                            </a>
+                            <p class="slider-caption">
+                                CoderGroup —— 基于 SpringBoot 实现的开发者社区，欢迎入驻
+                            </p>
+                        </li>
+                        <li id="callback_s2" class="callbacks1_on"
+                            style="float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 800ms ease-in-out 0s;">
+                            <a href="/6347.html" target="_blank" rel="external nofollow">
+                                <img src="http://blog-cdn.codergroup.cn/uploads/2019/4/cadc7319d40307a9ec7926f15244daad"
+                                     alt="一个简单漂亮的Java博客系统-适合初学ssm者">
+                            </a>
+                            <p class="slider-caption">
+                                一个简单漂亮的Java博客系统-适合初学ssm者
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 幻灯片 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9352">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/0c565ffe8be0080b5f95d81edcbc458a"
+                         alt="基于SpringBoot+Shiro+Redis+ElasticSearch实现的博客系统，欢迎注册使用"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/resource-share">资源分享</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9352" rel="bookmark">
+                                基于SpringBoot+Shiro+Redis+ElasticSearch实现的博客系统，欢迎注册使用
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            博主于去年下半年辞职到过年这段时间，重新整了一下博客系统。 预览地址：http://blog.liuyanzhao.com &nbsp;一、功能介绍本博客系统基于 SpringBoot
+                            2.x ，支持...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月07日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 4540 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9352#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 50
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9352" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9302">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/6dbdf2da23fae6d98912fdd93e10d425"
+                         alt="Shiro Freemarker标签的使用"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/shiro">Shiro</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9302" rel="bookmark">
+                                Shiro Freemarker标签的使用
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            如何想在 FreeMarker 的 ftl 模板文件里直接调用 shiro 的标签，需要添加依赖，并做简单的配置，下面简单介绍下，本文是建立在 SpringBoot +
+                            FreeMarker + Sh...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月06日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 615 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9302#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 7
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9302" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9351">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/d214b699342b3bb7d75fd3542dca2ddb"
+                         alt="SpringBoot集成Shiro+Redis后，@Cableable注解失效"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/trouble-solve">异常与报错</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9351" rel="bookmark">
+                                SpringBoot集成Shiro+Redis后，@Cableable注解失效
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            Springboot整合shiro前，service里的@Cacheable、@Transactional等注解都正常使用。
+                            整合shiro之后，UserRealm类里自动注入的service中的注解...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月06日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 396 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9351#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 
+                        发表评论 
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9351" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9338">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/2eccea206276fb06d02c34a5380da18f"
+                         alt="SpringBoot 整合ElasticSearch，实现站内搜索，高亮关键字"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/search-engine">搜索引擎框架</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9338" rel="bookmark">
+                                SpringBoot 整合ElasticSearch，实现站内搜索，高亮关键字
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            ElasticSearch 是目前最风靡的开源框架之一，常用于站内搜索和日志分析。上一篇文章介绍了 ES 和 MySQL 数据同步，本文就介绍 ES 如何集成到 SpringBoot
+                            中，实现基本的查...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月06日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 522 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9338#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 8
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9338" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9343">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/d214b699342b3bb7d75fd3542dca2ddb"
+                         alt="java.lang.NoClassDefFoundError: org/elasticsearch/common/xcontent/DeprecationHandler"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/trouble-solve">异常与报错</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9343" rel="bookmark">
+                                java.lang.NoClassDefFoundError: org/elasticsearch/common/xcontent/DeprecationHandler
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            java.lang.NoClassDefFoundError: org/elasticsearch/common/xcontent/DeprecationHandler 解决方案
+                            java.lang....
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月05日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 232 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9343#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9343" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9339">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/2eccea206276fb06d02c34a5380da18f"
+                         alt="安装 elasticsearch-analysis-ik 中文分词器"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/search-engine">搜索引擎框架</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9339" rel="bookmark">
+                                安装 elasticsearch-analysis-ik 中文分词器
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            ElasticSearch 默认的分词器对英文处理比较好，对中文的话，会将中文分成一个个字。 比如根据文章标题搜索，输入关键字&quot;新中国万岁&quot;，会将这五字一个个展开，然后搜索标题中包...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月05日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 192 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9339#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9339" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9334">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/2eccea206276fb06d02c34a5380da18f"
+                         alt="ElasticSeach实时同步MySQL数据"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/search-engine">搜索引擎框架</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9334" rel="bookmark">
+                                ElasticSeach实时同步MySQL数据
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            ElasticSearch是目前最风靡的一款的开源框架，可用于站内搜索和日志分析。 目前，我们准备把所有文章搜索或分页都基于 ElasticSearch 实现，其&ldquo;搜索速度快，有分词，高亮...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月05日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 290 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9334#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9334" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9327">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/d214b699342b3bb7d75fd3542dca2ddb"
+                         alt="go-mysql-elasticsearch dump.go:164 skip dump, use last binlog replication pos"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/trouble-solve">异常与报错</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9327" rel="bookmark">
+                                go-mysql-elasticsearch dump.go:164 skip dump, use last binlog replication pos
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            刚才使用&nbsp;go-mysql-elasticsearch 将 mysql 中的数据同步到 elasticsearch 中。 执行&nbsp;./bin/go-mysql-elasticsear...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月02日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 173 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9327#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 2
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9327" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9322">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/7113aa6abec4c583fd19b17f55d4d145"
+                         alt="MySQL binlog三种模式，设置模式为ROW"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/database-computer-science">数据库</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9322" rel="bookmark">
+                                MySQL binlog三种模式，设置模式为ROW
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            MySQL binlog有三种模式：Row、Statement 和 Mixed 。1.1 Row Level &nbsp;行模式日志中会记录每一行数据被修改的形式，然后在slave端再对相同的数据进行...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年02月02日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 171 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9322#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9322" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9318">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/6dbdf2da23fae6d98912fdd93e10d425"
+                         alt="SpringBoot Shiro多realm实现免密登录"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/springboot">SpringBoot教程</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9318" rel="bookmark">
+                                SpringBoot Shiro多realm实现免密登录
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            &nbsp; 上一篇文章介绍了SpringBoot整合Shiro，通过用户、角色、权限三者关联实现权限管理本篇文章主要介绍 Shiro 多 realm，根据不同的登录类型指定不同的
+                            realm。&nb...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月24日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 241 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9318#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9318" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9308">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/6dbdf2da23fae6d98912fdd93e10d425"
+                         alt="SpringBoot整合Shiro，通过用户、角色、权限三者关联实现权限管理"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/springboot">SpringBoot教程</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9308" rel="bookmark">
+                                SpringBoot整合Shiro，通过用户、角色、权限三者关联实现权限管理
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            一套系统，除了个人网站，一般都要有多种角色，每种角色必须严格控制它的权限。 Shiro是一种轻量级的安全框架，主要是做登录验证，权限检查，相对 Spring Security
+                            是要简单很多，源码也很清...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月24日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 312 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9308#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9308" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9224">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/6dbdf2da23fae6d98912fdd93e10d425"
+                         alt="Shiro的login认证原理源码分析"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/shiro">Shiro</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9224" rel="bookmark">
+                                Shiro的login认证原理源码分析
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            刚才在整Shiro的时候，发现登录密码一直说不对，然后debug看了一下源码。最终发现 shiro 的 md5 多次加密和我的多次 md5
+                            加密结果不太一样，然后索性直接用它的，最终解决。public...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月21日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 213 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9224#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9224" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9207">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/378441242f74492838fd97e2767e43b2"
+                         alt="SpringBoot2.x 整合Redis实现缓存，自定义序列化和设置过期时间"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/cache">缓存技术</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9207" rel="bookmark">
+                                SpringBoot2.x 整合Redis实现缓存，自定义序列化和设置过期时间
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            SpringBoot2.x和1.x的区别很大，比如在整合 Redis 这一块，RedisCacheManager就有不同。 本文介绍 SpringBoot 2.0.5版本 整合
+                            Redis。 &nbs...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月18日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 322 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9207#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 1
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9207" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9194">
+                    <img src="http://blog-cdn.codergroup.cn/uploads/2019/2/a1dd8f03b95df167c7b012c9d9508794"
+                         alt="使用脚本快速部署Java项目"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/java-web">JavaWeb</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9194" rel="bookmark">
+                                使用脚本快速部署Java项目
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            自己经常写一些小项目，有时候是自己写，更多时候是帮别人写。 一般都要部署到服务器上，最早使用的方法是本地 mvn clean package
+                            打包好，上传到服务器上运行。有时候发现自己写了个bug，修...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月17日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 499 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9194#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 2
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9194" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+                <!-- 文章摘要 -->
+                <article class="wow fadeInUp post type-post status-publish format-standard sticky hentry rwz"
+                         data-wow-delay="0.3s">
+                    <figure class="thumbnail">
+            <span class="load">
+                <a href="/article/9198">
+                    <img src="http://blog-cdn.codergroup.cn/static/images/thumbnail/img_10.jpg"
+                         alt="Froala Editor 简单破解"/>
+                </a>
+            </span>
+                        <span class="cat">
+                    <a href="http://blog.liuyanzhao.com/category/front-end-frame">前端组件</a>
+            </span>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="http://blog.liuyanzhao.com/article/9198" rel="bookmark">
+                                Froala Editor 简单破解
+                            </a>
+                        </h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="archive-content">
+                            Froala
+                            编辑器是目前使用体验最后的一个，本地运行没啥问题，把项目部署到服务器上，就显示了如图红红的一条警告，意思就是掏钱买许可证，价格还不便宜，一年100多刀一个域名。买不起，只能暂且通过
+                            CS...
+                        </div>
+                        <span class="title-l"></span>
+                        <span class="new-icon"></span>
+                        <span class="entry-meta">
+                <span class="date">2019年01月17日&nbsp;&nbsp;</span>
+                <span class="views"><i class="fa fa-eye"></i> 520 views</span>
+                <span class="comment">&nbsp;&nbsp;
+                    <a href="/article/9198#comments" rel="external nofollow">
+                        <i class="fa fa-comment-o"></i> 3
+                    </a>
+                </span>
+            </span>
+                        <div class="clear"></div>
+                    </div><!-- .entry-content -->
+
+                    <span class="entry-more">
+             <a href="/article/9198" rel="bookmark">阅读全文</a>
+        </span>
+                </article><!-- #post -->
+                <!-- 文章摘要 -->
+
+
+            </main><!-- .site-main -->
+            <nav class="navigation pagination" role="navigation">
+                <h2 class="screen-reader-text">文章导航</h2>
+                <div class="nav-links">
+
+
+                <span class="page-numbers current">
+                <span class="screen-reader-text">第 </span>1<span class="screen-reader-text"> 页</span>
+            </span>
+
+
+                    <a class="page-numbers" href="/page/2?order=post_id">
+                        <span class="screen-reader-text">第 </span>2<span
+                            class="screen-reader-text"> 页</span>
+                    </a>
+                    <a class="page-numbers" href="/page/3?order=post_id">
+                        <span class="screen-reader-text">第 </span>3<span
+                            class="screen-reader-text"> 页</span>
+                    </a>
+                    <a class="page-numbers" href="/page/4?order=post_id">
+                        <span class="screen-reader-text">第 </span>4<span
+                            class="screen-reader-text"> 页</span>
+                    </a>
+                    <a class="page-numbers" href="/page/5?order=post_id">
+                        <span class="screen-reader-text">第 </span>5<span
+                            class="screen-reader-text"> 页</span>
+                    </a>
+                    <span class="page-numbers dots">…</span>
+
+
+                    <a class="page-numbers "
+                       href="/page/54?order=post_id">
+                        <span class="screen-reader-text">第 </span>54<span class="screen-reader-text"> 页</span>
+                    </a>
+
+                    <a class="next page-numbers" href="/page/2?order=post_id">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </nav>
+        </div><!-- .content-area -->
+
+        <div id="sidebar" class="widget-area all-sidebar">
+            <aside class="widget about wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title">
+                    <i class="fa fa-bars"></i>关于本站
+                </h3>
+                <div id="feed_widget">
+                    <div class="feed-about">
+                        <div class="about-main">
+                            <div class="about-img">
+                                <img src="/upload/2018/10/avatar20181111193957347.jpg" alt="QR Code"/>
+                            </div>
+                            <div class="about-name">博客初心</div>
+                            <div class="about-the">言曌博客，个人程序人生的点滴记录和时光储备。淡泊明志，宁静致远。珍惜原创，矢志不渝。
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li class="weixin">
+                        <span>
+                            <a title="微信" target="_blank" href="/upload/2018/11/wechat20181230193700343.jpg"><i
+                                    class="fa fa-weixin"></i>
+                            </a>
+                        </span>
+                            </li>
+                            <li class="tqq">
+                                <a target=blank rel="external nofollow"
+                                   href=http://wpa.qq.com/msgrd?V=3&uin=847064370&Site=QQ&Menu=yes
+                                   title="QQ在线">
+                                    <i class="fa fa-qq"></i>
+                                </a>
+                            </li>
+                            <li class="tsina">
+                                <a title=""
+                                   href="http://weibo.com/liuyanzhao1/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"
+                                   target="_blank" rel="external nofollow"><i class="fa fa-weibo"></i></a>
+                            </li>
+                            <li class="feed">
+                                <a title="" href="https://github.com/saysky"
+                                   target="_blank"
+                                   rel="external nofollow"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                        <div class="about-inf">
+                            <span class="about-pn">文章 808</span>
+                            <span class="about-cn">留言 1801</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </aside>
+
+            <aside class="widget wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title">
+                    <i class="fa fa-bars"></i>网站概况
+                </h3>
+                <div class="widget-text">
+                    <ul class="site-profile">
+                        <li><i class="fa fa-file-o"></i>
+                            文章总数：808 篇
+                        </li>
+                        <li><i class="fa fa-commenting-o"></i>
+                            留言数量：1801 条
+                        </li>
+                        <li><i class="fa fa-folder-o"></i>
+                            分类数量：49 个
+                        </li>
+                        <li><i class="fa fa-tags"></i> 标签总数：71 个
+                        </li>
+                        <li><i class="fa fa-link"></i> 链接数量：2
+                            个
+                        </li>
+                        <li><i class="fa fa-clock-o"></i> 运行时间：<span id="blogStart"></span> 天</li>
+                        <li><i class="fa fa-eye"></i>
+                            浏览总量：753629 次
+                        </li>
+                        <li><i class="fa fa-pencil-square-o"></i> 最后更新：
+                            <span style="color:#2F889A">2019年07月01日</span>
+                        </li>
+                        <span style="color:red;">
+                    加油！不要因为走的太远，而忘了当初为什么出发。
+                </span>
+                    </ul>
+                    <script>
+                        var dateBegin = new Date("2017-11-11");
+                        var dateEnd = new Date();
+                        var parseDate = dateEnd.getTime() - dateBegin.getTime();
+                        var days = Math.floor(parseDate / (24 * 3600 * 1000));
+                        document.getElementById('blogStart').innerHTML = days + 1;
+                    </script>
+                </div>
+                <div class="clear"></div>
+            </aside>
+
+            <aside class="widget hot_comment wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title"><i class="fa fa-bars"></i>阅读榜</h3>
+                <div id="hot_comment_widget">
+                    <ul>
+                        <li>
+                            <span class='li-icon li-icon-1'>1</span>
+                            <a href="http://blog.liuyanzhao.com/article/5202" rel="bookmark"
+                               title=" 122325 views">
+                                【新】三国志13威力加强pk版1.13版本下载地址和解压密码</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-2'>2</span>
+                            <a href="http://blog.liuyanzhao.com/article/4730" rel="bookmark"
+                               title=" 58579 views">
+                                《盛世中的蝼蚁》原文</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-3'>3</span>
+                            <a href="http://blog.liuyanzhao.com/article/3223" rel="bookmark"
+                               title=" 21143 views">
+                                Java学习资料整合（持续更新）</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-4'>4</span>
+                            <a href="http://blog.liuyanzhao.com/article/6347" rel="bookmark"
+                               title=" 17342 views">
+                                一个简单漂亮的Java博客系统-适合初学ssm者</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-5'>5</span>
+                            <a href="http://blog.liuyanzhao.com/article/8402" rel="bookmark"
+                               title=" 16662 views">
+                                CoderGroup —— 基于 SpringBoot 实现的开发者社区，欢迎入驻</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-6'>6</span>
+                            <a href="http://blog.liuyanzhao.com/article/5872" rel="bookmark"
+                               title=" 12467 views">
+                                Intellij IDEA如何创建资源文件夹Source Folder</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-7'>7</span>
+                            <a href="http://blog.liuyanzhao.com/article/5828" rel="bookmark"
+                               title=" 9536 views">
+                                《信长之野望13天道》下载地址和win10好卡解决方案</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-8'>8</span>
+                            <a href="http://blog.liuyanzhao.com/article/2176" rel="bookmark"
+                               title=" 8136 views">
+                                配置七牛自定义域名cdn加速，让你的网站飞起来</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-9'>9</span>
+                            <a href="http://blog.liuyanzhao.com/article/6300" rel="bookmark"
+                               title=" 8015 views">
+                                SSM博客实战(9)-拦截器验证权限和登录与注销的实现</a>
+                        </li>
+                        <li>
+                            <span class='li-icon li-icon-10'>10</span>
+                            <a href="http://blog.liuyanzhao.com/article/7431" rel="bookmark"
+                               title=" 7544 views">
+                                SpringBoot + Spring Security + Thymeleaf 实现权限管理登录</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </aside>
+
+            <aside class="widget cx_tag_cloud wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title"><i class="fa fa-bars"></i>热门标签</h3>
+                <div class="tagcloud">
+                    <a href="http://blog.liuyanzhao.com/tag/java"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Java</a>
+                    <a href="http://blog.liuyanzhao.com/tag/error"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">故障</a>
+                    <a href="http://blog.liuyanzhao.com/tag/wordpress"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">WordPress</a>
+                    <a href="http://blog.liuyanzhao.com/tag/springboot"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">SpringBoot</a>
+                    <a href="http://blog.liuyanzhao.com/tag/js"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">JS</a>
+                    <a href="http://blog.liuyanzhao.com/tag/essay"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">美文</a>
+                    <a href="http://blog.liuyanzhao.com/tag/video"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">视频</a>
+                    <a href="http://blog.liuyanzhao.com/tag/计算机网络"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">计算机网络</a>
+                    <a href="http://blog.liuyanzhao.com/tag/thread"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">多线程</a>
+                    <a href="http://blog.liuyanzhao.com/tag/jsp"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">JSP</a>
+                    <a href="http://blog.liuyanzhao.com/tag/mybatis"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Mybatis</a>
+                    <a href="http://blog.liuyanzhao.com/tag/html-css"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">HTML/CSS</a>
+                    <a href="http://blog.liuyanzhao.com/tag/mysql"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">MySQL</a>
+                    <a href="http://blog.liuyanzhao.com/tag/php"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">PHP</a>
+                    <a href="http://blog.liuyanzhao.com/tag/spring"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Spring</a>
+                    <a href="http://blog.liuyanzhao.com/tag/springmvc"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">SpringMVC</a>
+                    <a href="http://blog.liuyanzhao.com/tag/eclipse"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Eclipse</a>
+                    <a href="http://blog.liuyanzhao.com/tag/插件"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">插件</a>
+                    <a href="http://blog.liuyanzhao.com/tag/服务器"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">服务器</a>
+                    <a href="http://blog.liuyanzhao.com/tag/idea"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">IDEA</a>
+                    <a href="http://blog.liuyanzhao.com/tag/c"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">C</a>
+                    <a href="http://blog.liuyanzhao.com/tag/面试"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">面试</a>
+                    <a href="http://blog.liuyanzhao.com/tag/算法"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">算法</a>
+                    <a href="http://blog.liuyanzhao.com/tag/redis"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Redis</a>
+                    <a href="http://blog.liuyanzhao.com/tag/linux"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Linux</a>
+                    <a href="http://blog.liuyanzhao.com/tag/mac"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Mac</a>
+                    <a href="http://blog.liuyanzhao.com/tag/jpa"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">JPA</a>
+                    <a href="http://blog.liuyanzhao.com/tag/begin"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">知更鸟主题</a>
+                    <a href="http://blog.liuyanzhao.com/tag/thinkphp"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">ThinkPHP</a>
+                    <a href="http://blog.liuyanzhao.com/tag/ssm"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">SSM</a>
+                    <a href="http://blog.liuyanzhao.com/tag/软件"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">软件</a>
+                    <a href="http://blog.liuyanzhao.com/tag/good-advice"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">他山之石</a>
+                    <a href="http://blog.liuyanzhao.com/tag/exercises"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">习题</a>
+                    <a href="http://blog.liuyanzhao.com/tag/data-structure"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">数据结构</a>
+                    <a href="http://blog.liuyanzhao.com/tag/gui"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">GUI</a>
+                    <a href="http://blog.liuyanzhao.com/tag/maven"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Maven</a>
+                    <a href="http://blog.liuyanzhao.com/tag/qiniu"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">七牛</a>
+                    <a href="http://blog.liuyanzhao.com/tag/spring-security"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Spring Security</a>
+                    <a href="http://blog.liuyanzhao.com/tag/hibernate"
+                       class="tag-cloud-link tag-link-75 tag-link-position-1"
+                       style="font-size: 14px;">Hibernate</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </aside>
+
+            <aside class="widget recent_comments wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title"><i class="fa fa-bars"></i>近期评论</h3>
+                <div id="message" class="message-widget">
+                    <ul>
+                        <li>
+                            <a href="/post/9352#comment-id-4165" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4164" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863123131
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4163" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863123123123
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4162" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863123123123123
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4161" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863465435645
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4160" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863翻译的也容易
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4159" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @1343314863士大夫士大夫士大夫
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9352#comment-id-4158" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>1343314863</strong></span>
+                                @逐梦asdasdas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9408#comment-id-4157" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>55296yu</strong></span>
+                                这么垃圾也敢卖？？？逼脸呢？？？
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/post/9408#comment-id-4156" title="" rel="external nofollow">
+                                <img src="//gravatar.loli.net/avatar/?s=256&d=mm"
+                                     alt="avatar" class="avatar avatar-128" height="128" width="128">
+
+                                <span class="comment_author"><strong>55296yu</strong></span>
+                                你寿尼曼
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </aside>
+
+
+        </div>
+        <div class="clear"></div>
+    </div><!-- .site-content -->
+
+    <div class="clear"></div>
+    <!-- 友情链接盒子 -->
+    <div class="links-box">
+        <div id="links">
+            <ul class="lx7">
+                <li class="link-f link-name wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="https://liuyanzhao.com">言曌博客</a>
+                </li>
+            </ul>
+            <ul class="lx7">
+                <li class="link-f link-name wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="http://codergroup.cn">CoderGroup</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div id="footer-widget-box" class="site-footer wow fadeInUp" data-wow-delay="0.3s">
+        <div class="footer-widget">
+
+            <aside id="text-1" class="widget widget_text wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title">
+                    <span class="s-icon"></span>勤有功，戏无益
+                </h3>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a title="" target="_blank" href="/p/message">
+                                <i class="fa-commenting fa"></i>
+                                <span class="font-text">留言板</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="/sitemap">
+                                <i class="fa-sitemap fa"></i>
+                                <span class="font-text">站点地图</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="nofollow" href="/archive">
+                                <i class="fa-list-alt fa"></i>
+                                <span class="font-text">文章归档</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="" target="_blank" href="/tags">
+                                <i class="fa fa-tag"></i>
+                                <span class="font-text">标签库</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="" target="_blank" href="/recent-comments">
+                                <i class="fa-comment fa"></i>
+                                <span class="font-text">最新评论</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="" target="_blank" href="/highlight">
+                                <i class="fa-code fa"></i>
+                                <span class="font-text">代码高亮</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </aside>
+            <aside id="text-3" class="widget widget_text wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title">
+                    <span class="s-icon"></span> 关于本站
+                </h3>
+                <div class="textwidget">
+                    本站基于 SpringBoot、MyBatis、Redis、FreeMarker、ElasticSearch 实现。
+                    请充分利用本站搜索功能，后期将开源，请关注。
+                </div>
+                <div class="clear"></div>
+            </aside>
+            <aside id="text-4" class="widget widget_text wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="widget-title">
+                    <span class="s-icon"></span>联系博主
+                </h3>
+                <div class="textwidget">
+                    <div style="float:right;width:35%;">
+                        <img src="https://liuyanzhao.com/wp-content/uploads/2018/09/wechat.jpg">
+                    </div>
+                    <div style="margin-right:35%;padding-right:5px;">
+                        <p>有偿求助，技术支持、项目合作。
+                            扫右侧微信二维码或加 QQ 847064370</p>
+                        <div>
+
+                        </div>
+                        <div class="clear"></div>
+            </aside>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer wow fadeInUp" data-wow-delay="0.3s" role="contentinfo">
+        <div class="site-info">
+            <p style="text-align: center;">Copyright © <a href="https://liuyanzhao.com/" target="_blank"
+                                                          rel="noopener noreferrer">言曌博客 </a>丨<a
+                    href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow noopener noreferrer">赣ICP备17002430号 </a>丨
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36042102000137" target="_blank"
+                   rel="nofollow noopener noreferrer"><img style="margin-bottom: -4px;"
+                                                           src="https://liuyanzhao.com/wp-content/uploads/2017/03/ghs.png"/>赣公网安备36042102000137</a>
+            </p>
+            <p style="text-align: center;"><a
+                    href="http://tongji.baidu.com/web/welcome/ico?s=6afab79aca1c297eeabbd7b79812dba7" target="_blank"
+                    rel="nofollow noopener noreferrer">网站统计 </a></p>
+        </div><!-- .site-info -->
+    </footer><!-- .site-footer -->
+
+    <ul id="scroll">
+        <li class="log log-no">
+            <a class="log-button" title="文章目录">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="log-prompt">
+                <div class="log-arrow">文章目录</div>
+            </div>
+        </li>
+        <li>
+            <a class="scroll-h" title="返回顶部"><i class="fa fa-angle-up"></i></a>
+        </li>
+        <li><a class="scroll-b" title="转到底部"><i class="fa fa-angle-down"></i></a></li>
+        <li class="gb2-site"><a id="gb2big5"><span>繁</span></a></li>
+        <li class="qqonline">
+            <div class="online">
+                <a href="javascript:void(0)"><i class="fa fa-qq"></i></a>
+            </div>
+            <div class="qqonline-box">
+                <div class="qqonline-main">
+                    <div class="nline-wiexin">
+                        <h4>微信</h4>
+                        <img title="微信" alt="微信" src="/upload/2018/11/wechat20181230193700343.jpg"/>
+                    </div>
+                    <div class="nline-qq">
+                        <a target="_blank" rel="external nofollow"
+                           href="http://wpa.qq.com/msgrd?v=3&uin=847064370&site=qq&menu=yes"><i class="fa fa-qq"></i>在线咨询
+                        </a>
+                    </div>
+                </div>
+                <span class="qq-arrow"></span>
+            </div>
+        </li>
+    </ul>
+</div><!-- .site -->
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/jquery.min.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/slides.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/sticky.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/superfish.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/jquery.lazyload.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/tipso.js?ver=1.0.1'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/script.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/gb2big5.js'></script>
+<script type='text/javascript' src='http://blog-cdn.codergroup.cn/begin/assets/js/toastr.min.js'></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6afab79aca1c297eeabbd7b79812dba7";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+</body>
+</html>
+<script type="text/javascript">$(document).ready(function () {
+    $("#scrolldiv").textSlider({line: 1, speed: 300, timer: 6000});
+})</script>

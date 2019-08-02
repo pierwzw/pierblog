@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/simditor.css" />
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/module.js"></script>
+    <script type="text/javascript" src="../js/hotkeys.js"></script>
+    <!--<script type="text/javascript" src="../js/uploader.js"></script>-->
+    <script type="text/javascript" src="../js/simditor.js"></script>
+</head>
+<body>
+    <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+</body>
+<script>
+    var toolbar = ['title', 'bold', 'italic','underline', 'strikethrough', 'fontScale',
+               'color','|', 'ol', 'ul', 'blockquote', 'code', 'table', '|',
+               'link','image', 'hr', '|', 'indent', 'outdent', 'alignment'];//设置工具栏
+    var editor = new Simditor({
+        textarea: '#editor',
+        //optional options
+        placeholder: '请输入正文',
+        /*defaultImage: 'D:/root/webapps/assets/img/upload/avatar.jpg',*/
+        defaultImage: '../img/me.jpg',
+        params: {'user':'pier'},
+        imageButton: ['upload', 'external'],
+        upload: {
+            url: 'http://localhost:8081/fileUpload',//文件上传的接口地址
+            params: null,//键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+            fileKey: 'file',//服务器端获取文件数据的参数名
+            connectionCount: 3,
+            leaveConfirm: '正在上传文件'
+        },
+        tabIndent: true,
+        toolbar: toolbar,
+        toolbarFloat: true,
+        toolbarFloatOffset: 0,
+        toolbarHidden: false,
+        pasteImage: true,
+        cleanPaste: false,
+        codeLanguages: [
+            { name: 'C++', value: 'c++' },
+            { name: 'CSS', value: 'css' },
+            { name: 'HTML,XML', value: 'html' },
+            { name: 'JSON', value: 'json' },
+            { name: 'Java', value: 'java' },
+            { name: 'JavaScript', value: 'js' },
+            { name: 'Markdown', value: 'markdown' },
+            { name: 'Objective C', value: 'oc' },
+            { name: 'PHP', value: 'php' },
+            { name: 'Perl', value: 'parl' },
+            { name: 'Python', value: 'python' },
+            { name: 'Ruby', value: 'ruby' },
+            { name: 'SQL', value: 'sql'}
+        ]
+       /* allowedTags： allowedAttributes: allowedStyles */
+    });
+</script>
+</html>

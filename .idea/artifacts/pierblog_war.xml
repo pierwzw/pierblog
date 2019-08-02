@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pierblog:war">
+    <output-path>$PROJECT_DIR$/blog/target/artifacts/pierblog</output-path>
+    <root id="archive" name="pierblog_war.war">
+      <element id="artifact" artifact-name="pierblog:war exploded" />
+    </root>
+  </artifact>
+</component>

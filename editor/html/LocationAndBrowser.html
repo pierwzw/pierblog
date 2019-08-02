@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <script type="text/javascript" src="../js/browser.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">
+        document.write(
+            /*'IP地址:' + returnCitySN["cip"] +
+            ', CID:' + returnCitySN["cid"] +*/
+            returnCitySN["cname"] + "网友" +
+            " " + Browser.client.name + "/" + Browser.client.version +
+        " " + getOS());
+
+        function getBrowserInfo() {
+            var agent = navigator.userAgent.toLowerCase();
+
+            var regStr_ie = /msie [\d.]+;/gi;
+            var regStr_ff = /firefox\/[\d.]+/gi
+            var regStr_chrome = /chrome\/[\d.]+/gi;
+            var regStr_saf = /safari\/[\d.]+/gi;
+            var regStr_ope = /opera\/[\d.]+/gi;
+            var regStr_edge = /edge\/[\d.]+/gi;
+            var regStr_360 = /360\/[\d.]+/gi;
+            var regStr_qq = /qq\/[\d.]+/gi;
+            var regStr_sg = /sougou\/[\d.]+/gi;
+
+            //IE
+            if (agent.indexOf("msie") > 0) {
+                return agent.match(regStr_ie);
+            }
+
+            //firefox
+            if (agent.indexOf("firefox") > 0) {
+                return agent.match(regStr_ff);
+            }
+
+            //Chrome
+            if (agent.indexOf("chrome") > 0) {
+                return agent.match(regStr_chrome);
+            }
+
+            //Safari
+            if (agent.indexOf("safari") > 0 && agent.indexOf("chrome") < 0) {
+                return agent.match(regStr_saf);
+            }
+
+            //Opera
+            if (agent.indexOf("opera") > 0) {
+                return agent.match(regStr_ope);
+            }
+
+            //Edge
+            if (agent.indexOf("edge") > 0) {
+                return agent.match(regStr_edge);
+            }
+
+            // 360极速模式可以区分360安全浏览器和360极速浏览器
+            if (userAgent.indexOf('WOW') !== -1 && userAgent.indexOf('NET') < 0 && userAgent.indexOf('Firefox') < 0) {
+                /*if (navigator.javaEnabled()) {
+                    broName = '360安全浏览器-极速模式'
+                } else {
+                    broName = '360极速浏览器-极速模式'
+                }*/
+                return agent.match(regStr_360);
+            }
+            // 360兼容
+            if (userAgent.indexOf('WOW') !== -1 && userAgent.indexOf('NET') !== -1 && userAgent.indexOf('MSIE') !== -1 && userAgent.indexOf('rv') < 0) {
+                /*broName = '360兼容模式'*/
+                return agent.match(regStr_360);
+            }
+
+            //qq
+            if (agent.indexOf("qqbrowser") > 0) {
+                return agent.match(regStr_qq);
+            }
+
+            //sougou
+            if (agent.indexOf("se 2.x") > 0) {
+                return "sougou"
+            }
+
+        }
+
+        function getOS() {
+            var sUserAgent = navigator.userAgent;
+            var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+            var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
+            if (isMac) return "Mac";
+            var isUnix = (navigator.platform == "X11") && !isWin && !isMac;
+            if (isUnix) return "Unix";
+            var isLinux = (String(navigator.platform).indexOf("Linux") > -1);
+            if (isLinux) return "Linux";
+            if (isWin) {
+                var isWin2K = sUserAgent.indexOf("Windows NT 5.0") > -1 || sUserAgent.indexOf("Windows 2000") > -1;
+                if (isWin2K) return "Win2000";
+                var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+                if (isWinXP) return "WinXP";
+                var isWin2003 = sUserAgent.indexOf("Windows NT 5.2") > -1 || sUserAgent.indexOf("Windows 2003") > -1;
+                if (isWin2003) return "Win2003";
+                var isWinVista = sUserAgent.indexOf("Windows NT 6.0") > -1 || sUserAgent.indexOf("Windows Vista") > -1;
+                if (isWinVista) return "WinVista";
+                var isWin7 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1;
+                if (isWin7) return "Win7";
+                var isWin10 = sUserAgent.indexOf("Windows NT 10") > -1 || sUserAgent.indexOf("Windows 10") > -1;
+                if (isWin10) return "Win10";
+            }
+            return "other";
+        }
+    </script>
+</head>
+
+<body>
+</body>
+</html>
